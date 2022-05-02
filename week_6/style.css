@@ -29,7 +29,10 @@ img {
 }
 
 header {
+    align-items: baseline;
     background: #ffffff;
+    display: flex;
+    justify-content: space-between;
     padding: 1.2rem 0 0.4rem 1.2rem;
     position: sticky;
 }
@@ -39,6 +42,7 @@ header img {
 }
 
 nav ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -75,7 +79,7 @@ main a {
     position: relative;
 }
 
-main h3 {
+main h2 {
     background: #ffffff;
     bottom: 1rem;
     left: 1rem;
@@ -84,7 +88,7 @@ main h3 {
     position: absolute;
 }
 
-main a:hover h3 {
+main a:hover h2 {
     padding: 1.2rem 2rem 3rem;
     max-width: 33rem;
     width: 93%;
@@ -92,10 +96,9 @@ main a:hover h3 {
 
 main a:hover span {
     display: block;
-    font-weight: 300;
     border-bottom: 5px solid #1b1b1b;
     font-size: 2.400em;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.11;
     padding: 0 0 0.333em 0;
     margin: 0 0 0.417em 0;
@@ -109,6 +112,9 @@ main a:hover span::after {
     position: absolute;
 }
 
+main li {
+    margin-bottom: 1rem;
+}
 
 footer {
     background: #ffffff;
