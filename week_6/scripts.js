@@ -94,7 +94,29 @@ function createTiles(authors){
     });
     return tileList;
 }
-console.log(createTiles(authors));
+
 /** create function addTiles to add all tiles to the DOM randomly */
+function addTiles(list){
+    const ulTag = document.querySelector('main ul');
+    /** randomize list first */
+    list = randomize(list);
+    list.forEach(li => ulTag.appendChild(li));
+}
+
+// tempList
+function randomize(list){
+    let randomNumber = 0;
+    let tempList = [];
+    list.forEach(item => {
+        do {
+            randomNumber = Math.floor(Math.random() * (list.length));
+        } while(tempList[randomNumber] !== undefined)
+
+        tempList[randomNumber]= item;
+    });
+    return tempList;
+}
+
+addTiles(createTiles(authors));
 
 /** add an eventListener on the logo to rebuild the list on click */
