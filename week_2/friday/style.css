@@ -14,19 +14,19 @@ body {
     box-sizing: inherit;
 }
 
-h1 {
+/* h1 {
     background: red;
     height: 250px;
     margin: auto;
     padding: 30px;
     text-align: center;
     width: 50%;
-}
+} */
 
-/* inline-block
-main {
+/* inline-block */
+/* main {
     background: blue;
-    display: inline-block;
+    display:inline-block;
     width: 50%;
 }
 
@@ -34,11 +34,10 @@ aside {
     background: green;
     display: inline-block;
     width: 50%;
-}
-*/
+} */
 
-/* flex */
-body {
+/* flex  */
+/* body {
     display: flex;
     flex-direction: row;  
     flex-wrap: wrap;  
@@ -64,4 +63,4 @@ footer {
     background: #000;
     color: #fff;
     flex-basis: 100%;
-}
+} */
